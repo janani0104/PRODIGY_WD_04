@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contacts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding-top: 60px;
+            display: flex;
+            justify-content: flex-start;
+            color: white;
+            background-color: black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgb(98, 95, 95);
+            padding: 0 20px;
+            transition: background-color 0.3s;
+            z-index: 1000;
+            font-size: 23px;
+        }
+
+        .nav-brand p {
+            color: pink;
+            margin: 0;
+            padding-right: 100px;
+            font-size: 40px;
+        }
+
+        .nav-left,
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right .nav-icons,
+        .nav-right .resume {
+            display: flex;
+            align-items: center;
+            padding: 20px 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: pink;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: pink;
+        }
+
+        .nav-icons a {
+            color: pink;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .nav-icons i {
+            font-size: 20px;
+        }
+
+        .nav-icons a:hover {
+            color: white;
+        }
+
+        .resume button {
+            background-color: pink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .resume button:hover {
+            background-color: white;
+            color: pink;
+        }
+
+        .contact-section {
+            width: 80%;
+            max-width: 800px;
+            margin: 150px auto;
+            padding: 50px;
+            background-color: #2a2a2a;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            border: 1px solid;
+
+        }
+
+        .contact-section h2 {
+            color: #ff69b4;
+        }
+
+        .contact-section p,
+        .contact-section a {
+            color: #f0f0f0;
+
+        }
+
+        .contact-section a:hover {
+            color: #ff69b4;
+        }
+
+        .contact-section ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .contact-section li {
+            margin-bottom: 10px;
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main-nav">
+        <div class="nav-left">
+            <div class="nav-brand">
+                <p>Janani M</p>
+            </div>
+            <div class="nav-links">
+                <a href="portfolio.html">Home</a>
+                <a href="Aboutme.html">About Me</a>
+                <a href="#">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-icons">
+                <a href="https://www.linkedin.com/in/janani-m-a74928289/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/janani0104" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="resume">
+                <a href="JANANI M resume.docx"><button id="clickbtn">Resume</button></a>
+            </div>
+        </div>
+
+
+
+
+    </nav>
+    <div class="contact-section">
+        <h2>Contact Me</h2>
+        <p>If you're interested in my work or have any queries, feel free to reach out!</p>
+        <ul>
+            <li>Email: <a href="mailto:mjan.lakshmi@gmail.com">mjan.lakshmi@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/janani-m-a74928289/" target="_blank">Janani M</a></li>
+            <li>GitHub: <a href="https://github.com/janani0104" target="_blank">janani0104</a></li>
+            <li>Portfolio: <a href="http://127.0.0.1:3000/Portfolio/portfolio.html" target="_blank">Janani's
+                    Portfolio</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>
