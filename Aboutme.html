@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            padding-top: 60px;
+            display: flex;
+            justify-content: flex-start;
+            color: white;
+            background-color: black;
+
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgb(98, 95, 95);
+            padding: 0 20px;
+            transition: background-color 0.3s;
+            z-index: 1000;
+            font-size: 23px;
+        }
+
+        .nav-brand p {
+            color: pink;
+            margin: 0;
+            padding-right: 100px;
+            font-size: 40px;
+        }
+
+        .nav-left,
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right .nav-icons,
+        .nav-right .resume {
+            display: flex;
+            align-items: center;
+            padding: 20px 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: pink;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: pink;
+        }
+
+        .nav-icons a {
+            color: pink;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .nav-icons i {
+            font-size: 20px;
+        }
+
+        .nav-icons a:hover {
+            color: white;
+        }
+
+        .resume button {
+            background-color: pink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+
+        }
+
+        .resume button:hover {
+            background-color: white;
+            color: pink;
+        }
+
+        .holo-container {
+            position: fixed;
+            top: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            max-width: 800px;
+            height: 500px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid pink;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 50px;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
+        }
+
+        #holo-content {
+            text-align: center;
+            max-width: 700px;
+        }
+
+        #holo-content h2 {
+            margin-bottom: 20px;
+        }
+
+        #myimg {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        #myimg img {
+            margin-right: 20px;
+            width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        #content {
+            text-align: left;
+        }
+
+        #content p,
+        #content ul {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main-nav">
+        <div class="nav-left">
+            <div class="nav-brand">
+                <p>Janani M</p>
+            </div>
+            <div class="nav-links">
+                <a href="portfolio.html">Home</a>
+                <a href="Aboutme.html">About Me</a>
+                <a href="#">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-icons">
+                <a href="https://www.linkedin.com/in/janani-m-a74928289/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/janani0104" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="resume">
+                <a href="JANANI M resume.docx"><button id="clickbtn">Resume</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="holo-container" id="holo-container">
+        <div id="holo-content">
+            <h2>About Me</h2>
+            <div id="content">
+                <p>Hello! I'm Janani M, a dedicated Computer Science student with a strong passion
+                    for coding and problem-solving. Currently pursuing my Degree at Coimbatore Institute of Technology
+                    in Coimbatore, I am eager to apply my knowledge
+                    to real-world challenges.</p>
+                <p style="color:pink;"><strong>Education:</strong></p>
+                <ul>
+                    <li>B.E Computer Science and Engineering at Coimbatore Institute of Technology<br>Oct 2023-May-2025
+                    </li>
+                    <li>Higher Secondary in St.Ann's Matriculation Higher Secondary School<br>May 2021 </li>
+                </ul>
+                <p style="color:pink;"><strong>Skills:</strong></p>
+                <ul>
+                    <li><strong>Languages :</strong> Python, C, HTML, CSS, JavaScript, SQL,jQuery</li>
+                    <li><strong>Tools :</strong>MySQL, Git, GitHub, mongodB</li>
+                    <li><strong>Platforms :</strong> Linux, Windows</li>
+                    <li><strong>Others :</strong>MS Excel,MS Word,MS PowerPoint</li>
+                </ul>
+                <p style="color: pink;">Projects</p>
+                <ul style="list-style-type: none;">
+                    <li>- Developed a dynamic to-do list app using HTML,CSS,JavaScript and React and connected to
+                        Firebase for seamless real time updates.</li>
+                </ul>
+                <p style="color: pink;">Experience:</p>
+                <ul style="list-style-type: none;">
+                    <li>Explored full stack development in Epicsense technologies as an intern.</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+        document.getElementById("clickbtn").addEventListener("click", function () {
+            var holoContainer = document.getElementById("holo-container");
+            holoContainer.style.display = holoContainer.style.display === "none" ? "flex" : "none";
+        });
+    </script>
+</body>
+
+</html>
+
+</html>
