@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap">
+
+
+    <style>
+        body {
+            margin: 0;
+            padding-top: 60px;
+            display: flex;
+            justify-content: flex-start;
+            color: white;
+            background-color: black;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgb(98, 95, 95);
+            padding: 0 20px;
+            transition: background-color 0.3s;
+            z-index: 1000;
+            font-size: 23px;
+        }
+
+        .nav-brand p {
+            color: pink;
+            margin: 0;
+            padding-right: 100px;
+            font-size: 40px;
+        }
+
+        .nav-left,
+        .nav-right {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-right .nav-icons,
+        .nav-right .resume {
+            display: flex;
+            align-items: center;
+            padding: 20px 20px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+        }
+
+        nav a {
+            color: pink;
+            text-decoration: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: pink;
+        }
+
+        .nav-icons a {
+            color: pink;
+            padding: 15px 20px;
+            text-decoration: none;
+        }
+
+        .nav-icons i {
+            font-size: 20px;
+        }
+
+        .nav-icons a:hover {
+            color: white;
+        }
+
+        .resume button {
+            background-color: pink;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .resume button:hover {
+            background-color: white;
+            color: pink;
+        }
+
+        .content-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 100px;
+
+        }
+
+        #my-img img {
+
+            box-shadow: 0 0 15px rgba(255, 20, 147, 0.5);
+            border: 2px solid pink;
+            border-radius: 5px;
+            animation: slideRight 2s ease-out;
+
+        }
+
+        #main-content {
+            padding: 20px;
+            border: 1px solid black;
+            margin-left: 50px;
+            color: pink;
+            font-size: 40px;
+            font-family: 'Montserrat', sans-serif;
+            animation: slideLeft 2s ease-out;
+        }
+
+        #content p {
+            font-size: 1.5em;
+            color: pink;
+        }
+
+        @keyframes slideRight {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideLeft {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="main-nav">
+        <div class="nav-left">
+            <div class="nav-brand">
+                <p>Janani M</p>
+            </div>
+            <div class="nav-links">
+                <a href="portfolio.html">Home</a>
+                <a href="Aboutme.html">About Me</a>
+                <a href="#">Projects</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="nav-right">
+            <div class="nav-icons">
+                <a href="https://www.linkedin.com/in/janani-m-a74928289/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/janani0104" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+            <div class="resume">
+                <a href="JANANI M resume.docx"><button id="clickbtn">Resume</button></a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="content-container">
+        <div id="my-img">
+            <img src="janani.jpg" alt="Janani" style="width: 500px; height: 500px;">
+        </div>
+        <div id="main-content">
+            <p>
+                "Hello! I'm Janani M, currently in the journey of pursuing Computer Science and Engineering."
+
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
